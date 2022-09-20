@@ -6,12 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TWOther</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./dist.css">
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./dist.css">
+ 
 </head>
 
 <body class="bg-white dark:bg-dim-900">
@@ -23,7 +20,7 @@
 
       <!-- PERUBAHAN -->
       <a href="" class="link-active  my-2">
-        <img src="./assets/logo.png" alt="logohack" class="w-20 mr-2">
+        <img src="./assets/logo.png" alt="logohack" class="w-12 mr-2 ml-2 sm:w-20 sm:ml-2">
       </a>
       <!-- PERUBAHAN END-->
 
@@ -42,10 +39,11 @@
       
       <!-- NAVIGATION  END-->
       <!-- Button -->
-    <a href=""
+    <a href="../index.html"
       class="mx-auto w-11 h-11 xl:w-full flex items-center justify-center bg-red-600  rounded-full text-white font-bold hover:bg-red-900">
-      <i class="fa-solid fa-feather text-xl block xl:hidden "></i>
-      <span class="icon xl:ml-0 ">WOT</span>
+      <i class="fa-solid fa-arrow-right-from-bracket text-xl block xl:hidden"></i>
+      <span class="icon xl:ml-0 ">keluar</span>
+     
      </a>
     </div>
     <!-- End Left -->
@@ -87,19 +85,19 @@
         
           <div class="mr-2">
             <input type="radio" id="gaming" name="tweet__message" value="gaming" class="checked:bg-blue-500" />
-            <label for="gaming" class="text-white">Gaming</label><br>
+            <label for="gaming" class="text-white text-xs sm:text-sm ">Gaming</label><br>
           </div>
           <div class="mr-2">
             <input type="radio" id="sport" name="tweet__message" value="sport" class="checked:bg-blue-500" />
-            <label for="sport" class="text-white">Sport</label><br>
+            <label for="sport" class="text-white text-xs sm:text-sm">Sport</label><br>
           </div>
           <div class="mr-2">
             <input type="radio" id="musik__and__movie" name="tweet__message" value="musik__and__movie" class="checked:bg-blue-500" />
-            <label for="musik__and__movie" class="text-white">Music And Movie</label><br>
+            <label for="musik__and__movie" class="text-white text-xs  sm:text-sm">Movie</label><br>
           </div>
           
        
-          <button id="submit-twot" href="" class="font-bold bg-red-600 text-white rounded-full  px-6 ml-auto mr-1 flex items-center hover:bg-red-900">
+          <button id="submit-twot" href="" class="bg-red-600 text-white text-xs text-center rounded-full px-2 ml-auto mr-1 flex items-center font-bold  hover:bg-red-900 sm:px-6 sm:text-lg">
             WOT
           </button>
 
