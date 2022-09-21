@@ -1190,7 +1190,7 @@ video {
   border: 2px solid #374151;
 }
 
-.hover\:text-blue-400:hover {
+.hover\:text-red-600:hover {
   --tw-text-opacity: 1;
   color: rgb(96 165 250 / var(--tw-text-opacity));
 }

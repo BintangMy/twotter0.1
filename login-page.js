@@ -1,3 +1,23 @@
+// function CustomAlert(){
+
+//     $('.alert').addClass("show");
+//     $('.alert').removeClass("hide");
+//     $('.alert').addClass("showAlert");
+//     setTimeout(function(){
+//       $('.alert').removeClass("show");
+//       $('.alert').addClass("hide");
+//     },5000);
+//   $('.close-btn').click(function(){
+//     $('.alert').removeClass("show");
+//     $('.alert').addClass("hide");
+//   });
+// }
+
+// let customAlert = new CustomAlert();
+
+
+
+
 let displayNameInputElement = document.getElementById("display-name-input")
 const submitDisplayNameButton = document.getElementById("signIn")
 

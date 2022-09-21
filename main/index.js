@@ -14,7 +14,7 @@ function getRndInteger(min, max) { //random untuk profile picture user
     return Math.floor(Math.random() * (max - min + 1) ) + min;
 }
 
-let profilePictureArr = ["./profile_picture_comp/1.jpg","./profile_picture_comp/2.jpg","./profile_picture_comp/3.jpg","./profile_picture_comp/4.jpg","./profile_picture_comp/5.jpg"] //url profile picture user
+let profilePictureArr = ["./profile_picture_comp/1.jpg","./profile_picture_comp/2.jpg","./profile_picture_comp/3.jpg","./profile_picture_comp/4.jpg","./profile_picture_comp/5.jpg","./profile_picture_comp/6.jpg","./profile_picture_comp/7.jpg","./profile_picture_comp/8.jpg","./profile_picture_comp/9.jpg"]
 
 let sessionId = generateSessionId()                                                 // session-id
 let displayName = sessionStorage.getItem("displayName")
@@ -42,12 +42,16 @@ function updateUserData() {
     // sessionStorage.removeItem("displayName");
 
     userTimes.innerHTML = getUsertime
+
     sessionStorage.setItem("sessionId", sessionId)
 
 }
 
 updateUserData()
 // console.log(feedBox)
+
+
+    
 
 // get time
 
@@ -81,7 +85,7 @@ let twotCounter = 1
 
 submitFeedButton.addEventListener('click', function () {
     if (!twotTextInputElement.value) {
-        return alert('Silahkan masukkan keluhanmu')
+        return alert(`Silahkan pilih topik keluhan`)
     }
      // radio untuk memilih topic TWOT
 
@@ -114,7 +118,7 @@ let topicSelectorMusicMovies = document.getElementById("musik__and__movie")
 
 //         }
 //     })
-    
+
     let twotTopic = 0
     let textInput = twotTextInputElement.value
 
@@ -127,7 +131,7 @@ let topicSelectorMusicMovies = document.getElementById("musik__and__movie")
     console.log(twotTopic)
     
     if(!twotTopic) {
-        return alert(`Silahkan pilih topik keluhan`)
+        return alert(`Silahkan pilih topik keluhan`);
     }
     
     let feedList = document.getElementById('feed-list') // elemen yang akan menampilkan feed-feed
@@ -240,7 +244,9 @@ function populateFeed () {
 
     
     let profilePictureArr = ["./profile_picture_comp/1.jpg","./profile_picture_comp/2.jpg","./profile_picture_comp/3.jpg","./profile_picture_comp/4.jpg","./profile_picture_comp/5.jpg","./profile_picture_comp/6.jpg","./profile_picture_comp/7.jpg","./profile_picture_comp/8.jpg","./profile_picture_comp/9.jpg"]
-    let tweetsArr = ['Nama doang ada jordannya, padahal gak bisa main basket #sport', "bayernnnn anjenkkkkk, need barcelona another sextuplet this year please #sport" , "god of war ragnarok already my GOTY in my heart indeed tapi kenapa di delay lagi suu #gaming","kenapa hogwarts legacy diundur melolo seeh i want to escape my life and live like a wizard rite nowwww biychees #gaming", "madrid bayarr wasit teroooooooooooooooooshhhhh, jelas-jelas penalty suuu #sport", "WKWKWKWKWKWKWWKWKWK emyu lawaaak betttt mampoussssssssss #sport", "taeklaaaaaaaah kapan final champions leaguenya cokkkkk viscabarcaaa!!! #sport", "need another content deh kayaknya di mh sunbreak bosenin cok #gaming" , 'undur aja terus tgl rilis RTX 4080 butuh apgred ASAP WOI!!!! #gaming' , "NI ODA TERUS AJA GAK NGE REVEAL shanks in action! #musicnmovies" , "oklahoma city thunder kapan bisa nge draft macem big three lagi,kek jaman KD-RUSS-HARDEN ampas BANGET DRAFT PICKNYA!! #sport" , "ARCTIC MONKEYS WE NEED YOU TO COME TO INDONESIA!! #musicnmovies" , "switch pro kapan riliss woyyyy!!! biar game-gamenya kagak farming-rpg game terosshhh sampaaaah! #gaming" , "music scorenya tower of fantasy gabisa nyaingin music scorenya genshin titik!!!! #musicnmovies" , "penaldo the tap in merchant dah pensi ajee bangg!!! #sport" , "forspoken delay terossshh hasuuuu!!! #gaming" , "joycon drift meloloooooooo cibayyyyyyyyyyyyy woeee nintendooogs benerin QC lo napaaa O_O #gaming", "butuh asupan game2 berkualitas di swtich jangan farming-simulator RPG terosssh mana zeldanyaaaa nintendogs!!! #gaming" , "mana di manaaa trophy champions league barca~~  #sport" , "tsunade= tsu tsu nya gedeekkkkk KAPAN GUA BISA DAPET GF MACEM TSUNADE SANGEE-AHHHHHHHHHHHH!!! #musicnmovies" , "kesian banget sih tottenham ayam kampus club udah 5 dekade masih aja kaga ada trophy satupun HAHAHAHAAH! #sport" , "arsendal the ampas jewel of london utara WKWKWKWKWWK #sport" , "FFFFFUUUUUUU ELDEN RING CHEATERS, bandai namco fix your GAMEEEEEEEEE!!! #gaming"]
+
+    let tweetsArr =["kang panci di PUBG #gaming", "RGB Nomor 1 #gaming", "HP mahal kok mainya ef ef dek #gaming","Nama doang ada jordannya, padahal gak bisa main basket #sport","madrid bayarr wasit teroooooooooooooooooshhhhh, jelas-jelas penalty #sport"," emyu lawaaak betttt losetrack mulu dek #sport", "undur aja terus tgl rilis RTX 4080 butuh apgred ASAP WOI!!!! #gaming", "NI ODA TERUS AJA GAK NGE REVEAL shanks in action! #musicnmovies", "oklahoma city thunder kapan bisa nge draft macem big three lagi,kek jaman KD-RUSS-HARDEN ampas BANGET DRAFT PICKNYA!! #sport" ,"kemaren gw liat di playstore ada game petualangan pesulap merah untuk pembuktian #gaming", "ARCTIC MONKEYS WE NEED YOU TO COME TO INDONESIA!! #musicnmovies" , "switch pro kapan riliss woyyyy!!! biar game-gamenya kagak farming-rpg game terosshhh sampaaaah! #gaming" , "music scorenya tower of fantasy gabisa nyaingin music scorenya genshin titik!!!! #musicnmovies" , "penaldo the tap in merchant dah pensi ajee bangg!!! #sport", "butuh asupan game2 berkualitas di swtich jangan farming-simulator RPG terosssh mana zeldanyaaaa nintendo!!! #gaming" , "Moba kok analog dek dek #gaming", "one piece kapan tamatnya coba #musicnmovies", "asli filmnya bagus banget editanya rapih kaya film india #musicnmovies", "baru juga mau login,malah disuruh kewarung #gaming", "Bjorka diajakin by one  zuma sama OP warnet pengkolan #gaming", "lagi enak ngoding sambil dengerin musik eh tiba tiba ada iklan shopee COD #musicnmovies"]
+
     let usersArr = ["Makrusus", "Pesa", "Fethir", "Onad", "jenud", "pakjul", "akhirudin", "wali", "andreak", "tidar", 'Ari', 'Ayu', 'Aulia', 'Anggi', 'Agus', 'Ade' ,'Adryan', 'Arya', 'Amel', 'Andi','Bayu', 'Bagas', 'Budi', 'Bagus', 'Bastian','Bintang', 'Ben', 'Chika', 'Cinta', 'Citra', 'Cakra', 'Candra', 'Darius', 'Dimas', 'Deo', 'Dean','Ivan' ,'Dinda', 'Dika', 'Dodi', 'Ernes', 'Erwin', 'Eka', 'Elin', 'Elsa', 'Ema', 'Ela', 'Fikri', 'Fitri', 'Fika', 'Fani', 'Fina', 'Farid', 'Fadel', 'Galih', 'Gading', 'Guntur', 'Gilang', 'Geri', 'Gibran', 'Hamidah', 'Hilda', 'Hilmi', 'Hisyam', 'Haikal', 'Harun', 'Gayuh' , 'Anuman', 'Kiet', 'Kob Sinn', 'Kriang', 'Kasemchai','Khemkhaeng', 'Kittibun', 'Kamon', 'khalahan', ' kraisee', 'Lamon', 'Mongkut', 'makok', 'Mennoi', 'Nopadonlai', 'Ngaplai', 'niran', 'Narong' ,'paiton', 'Panit', 'pravat','Phet', 'ngablay', 'thangsei','Sakda','Ritpacong' , 'Shonchai', 'Suctratlai' , 'Shomcai','Songranglai' , 'naprep', 'Udom', 'Thapang', 'Xuwangab', 'Yuthankon', 'Shonthiak', 'Shochak', 'Akemi','Genjeh', 'Arata', 'Chai' ,'Nande', 'Goro', 'Hiroki' , 'Nantumunan', 'Kazuki', 'Ken', 'Kenji', 'Kenshin' , 'Kenta', 'Monkey', 'Nishinoya', 'Lawliet', 'Kazuto', 'Kirigaya', 'Sakata', 'Naruto', 'Uzumaki', 'Zoro', 'Edward', 'Elric', 'Monkey', 'Luffy', 'Toshiro', 'Hitsugaya', 'Kaede', 'Rukawa', 'Chrollo', 'Lucilfer', 'Kyoya', 'Hibari', 'Gojo', 'Satoru', 'araki', 'Himiko', 'Toga', 'Nobara', 'Kugisaki', 'Kenpachi', 'Yuji', 'Itadori', 'Megumi', 'Fushiguro', 'Nobara', 'Kugisaki', 'Maki', 'Zenin', 'Toge', 'Inumaki', 'Yuta', 'Okkotsu', 'Kinji', 'Hakari', 'Kirara']
     let hoursArr = ['5:46','7:26','9:12','18:16','15:34','21:21','19:11','11:11','5:56','3:11','1:46','7:31','2:43','11:47','3:51','4:23','15:11','17:59','5:52','6:45','5:46','7:26','9:12','18:16','15:34','21:21','19:11','11:11','5:56','3:11','1:46','7:31','2:43','11:47','3:51','4:23','15:11','17:59','5:52','6:45','5:46','7:26','9:12','18:16','15:34','21:21','19:11','11:11','5:56','3:11','1:46','7:31','2:43','11:47','3:51','4:23','15:11','17:59','5:52','6:45','5:46','7:26','9:12','18:16','15:34','21:21','19:11','11:11','5:56','3:11','1:46','7:31','2:43','11:47','3:51','4:23','15:11','17:59','5:52','6:45','5:46','7:26','9:12','18:16','15:34','21:21','19:11','11:11','5:56','3:11','1:46','7:31','2:43','11:47','3:51','4:23','15:11','17:59','5:52','6:45','5:46','7:26','9:12','18:16','15:34','21:21','19:11','11:11','5:56','3:11','1:46','7:31','2:43','11:47','3:51','4:23','15:11','17:59','5:52','6:45','5:46','7:26','9:12','18:16','15:34','21:21','19:11','11:11','5:56','3:11','1:46','7:31','2:43','11:47','3:51','4:23','15:11','17:59','5:52','6:45','5:46','7:26','9:12','18:16','15:34','21:21','19:11','11:11','5:56','3:11','1:46','7:31','2:43','11:47','3:51','4:23','15:11','17:59','5:52','6:45','5:46','7:26','9:12','18:16','15:34','21:21','19:11','11:11','5:56','3:11','1:46','7:31','2:43','11:47','3:51','4:23','15:11','17:59','5:52','6:45',]
     let tempArr =[]
